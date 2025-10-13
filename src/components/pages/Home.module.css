@@ -1,11 +1,15 @@
-.main_container {
+.main_container{
+    width: 100%;
+}
+
+.title_and_cards {
     width: 100%;
 
     padding-top: 110px;
 
     background-image: url('../images/bg.png');
-    background-position: fixed;
-    background-size: 100%;
+    background-size: 100% 85%;
+    background-repeat: no-repeat;
 }
 
 .title {
