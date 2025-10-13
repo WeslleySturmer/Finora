@@ -1,10 +1,52 @@
-.container{
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+
+    backdrop-filter: blur(10px);
+    border-bottom: solid 1px #fff;
+    height: 105px;
+    width: 100%;
+
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.container nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 50px;
+
+    width: 50%;
 }
 
-.container img {
+.container nav img {
     width: 100px;
     height: 100px;
+}
+
+.container nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    list-style: none;
+}
+
+.container a {
+    text-decoration: none;
+    color: #fff;
+    border-bottom: solid 1px #ffffff00;
+
+    transition: all 0.4s ease;
+}
+
+.container a:hover{
+    opacity: 80%;
+    border-bottom: solid 1px #fff;
 }
