@@ -15,6 +15,7 @@ function Footer() {
                 <a href='https://wa.me/5549991031006' target='_blank' ><FaWhatsapp /></a>
                 <a href='mailto:weslley.w.sturmer@gmail.com' target='_blank' ><MdEmail /></a>
             </div>
+            <p>© 2025 Finora. Todos os direitos reservados.</p>
         </footer>
     )
 }
