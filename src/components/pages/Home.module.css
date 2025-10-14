@@ -29,31 +29,6 @@
     text-shadow: 0px 0px 3px black;
 }
 
-.btnStart{
-    padding: 15px;
-    border: none;
-    border-radius: 10px;
-    margin-top: 40px;
-    cursor: pointer;
-    background: linear-gradient(45deg, #6FF8D2, #A672FE);
-    box-shadow: 0px 0px 3px #00000071;
-    transition: all 0.4s ease;
-    width: 250px;
-}
-
-.btnStart a{
-    color: #FFF;
-    font-size: 1.6em;
-    font-weight: bold;
-    text-shadow: 0px 0px 1px #00000081;
-    text-decoration: none;
-}
-
-.btnStart:hover{
-    scale: 105%;
-    opacity: 85%;
-}
-
 .title h1 {
     font-weight: bold;
     font-size: 5em;

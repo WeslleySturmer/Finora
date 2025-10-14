@@ -1,6 +1,6 @@
 import styles from './Home.module.css'
 
-import { Link } from 'react-router-dom'
+import LinkBtn from '../layout/LinkBtn'
 
 import { FaMoneyBillTrendUp, FaChartLine, FaComments, FaGear } from 'react-icons/fa6'
 import { GiPayMoney } from 'react-icons/gi'
@@ -13,7 +13,7 @@ function Home() {
                 <section className={styles.title}>
                     <h1>Simplifique suas finanças</h1>
                     <p>Gerencie, localize gastos e aumente seus aportes com facilidade</p>
-                    <button className={styles.btnStart}><Link to='/wallet'>Comece agora</Link></button>
+                    <LinkBtn page='/wallet' text='Comece Agora' />     
                 </section>
 
                 <section className={styles.card_container}>
@@ -66,7 +66,7 @@ function Home() {
                     <FaComments />
                 </article>
 
-                <button className={styles.btnStart}><Link to='/wallet'>Comece agora</Link></button>
+                <LinkBtn page='/wallet' text='Comece Agora' />
             </section>
 
         </main>
