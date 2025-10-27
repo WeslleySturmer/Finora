@@ -1,8 +1,18 @@
+import styles from './Wallet.module.css'
+
+import LinkBtn from '../layout/LinkBtn'
+
 function Wallet(){
     return (
-        <div>
-            <h1>Wallet</h1>
-        </div>
+        <main className={styles.container}>
+            <header>
+                <h1>Carteiras</h1>
+                <LinkBtn page='/new_wallet' text='Criar carteira' />
+            </header>
+            <article>
+                
+            </article>
+        </main>
     )        
 }
 

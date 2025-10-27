@@ -94,8 +94,12 @@
 }
 
 .services h3{
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: bold;
+}
+
+.services p{
+    font-size: 1.1em;
 }
 
 .services svg{

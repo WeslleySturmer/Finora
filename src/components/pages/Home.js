@@ -13,7 +13,7 @@ function Home() {
                 <section className={styles.title}>
                     <h1>Simplifique suas finanças</h1>
                     <p>Gerencie, localize gastos e aumente seus aportes com facilidade</p>
-                    <LinkBtn page='/wallet' text='Comece Agora' />     
+                    <LinkBtn page='/wallet' text='Comece Agora' />
                 </section>
 
                 <section className={styles.card_container}>
