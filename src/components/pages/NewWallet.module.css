@@ -31,18 +31,15 @@
     border-radius: 20px;
 }
 
-.container section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
+.container section {
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
 
-    width: 80%;
+    width: 70%;
+    height: 70%;
 }
 
-@media (max-width: 800px) {
-    .container header{
-        justify-content: center;
-    }
+.container table{
+    border: 1px solid black;
 }

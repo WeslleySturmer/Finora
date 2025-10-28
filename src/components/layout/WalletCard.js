@@ -6,7 +6,7 @@ function WalletCard({ description, tickers}){
     return (
         <article className={styles.container}>
             <h3>{description}</h3>
-            <p>valor de carteira: </p>
+            <p>Valor de carteira: </p>
             {tickers.map(ticker => (
                 <p>{ticker}</p>
             ))}
