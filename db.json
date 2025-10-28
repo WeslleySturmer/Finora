@@ -1,4 +1,14 @@
 {
   "wallets": [
+    {
+      "id": 1,
+      "description": "Ações",
+      "tickers": ["SAPR4", "BBAS3"]
+    },
+    {
+      "id": 2,
+      "description": "Fundos imobiliários",
+      "tickers": ["MXRF11", "IVVB11"]
+    }
   ]
 }

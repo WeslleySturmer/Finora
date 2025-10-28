@@ -1,9 +1,17 @@
-function WalletCard(wallet){
+import styles from './WalletCard.module.css'
+
+import LinkBtn from './LinkBtn'
+
+function WalletCard({ description, tickers}){
     return (
-        <div>
-            <h3>{wallet.name}</h3>
-            <p>{wallet.value}</p>
-        </div>
+        <article className={styles.container}>
+            <h3>{description}</h3>
+            <p>valor de carteira: </p>
+            {tickers.map(ticker => (
+                <p>{ticker}</p>
+            ))}
+            <LinkBtn to='#' text='Ver mais' />
+        </article>
     )
 }
 
