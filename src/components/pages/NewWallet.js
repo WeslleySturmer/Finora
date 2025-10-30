@@ -65,6 +65,8 @@ function NewWallet() {
                         </tbody>
                     </table>
 
+                    <LinkBtn page='/wallet' text='Salvar' />
+
                 </form>
             </section>
         </main>

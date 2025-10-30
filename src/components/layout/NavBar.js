@@ -2,13 +2,13 @@ import styles from './NavBar.module.css'
 
 import { Link } from 'react-router-dom'
 
-import logo from '../images/logo.png'
+import logo from '../../img/logo.png'
 
 function NavBar(){
     return (
         <header className={styles.container}>
             <nav>
-                <Link to='/'><img src={logo} alt='logo'/></Link>
+                <Link to='/'><img src={logo} alt='Logo Finora'/></Link>
                 <ul>
                     <li> <Link to='/'>Home</Link> </li>
                     <li> <Link to='/wallet'>Carteira</Link> </li>
