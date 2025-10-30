@@ -1,4 +1,4 @@
-.container{
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,6 +11,7 @@
 
 .container section {
     display: flex;
+    justify-content: space-around;
     gap: 40px;
 
     background-color: white;
@@ -21,17 +22,28 @@
     width: 80%;
 }
 
-.container h2{
+.container section:nth-child(3){
+    justify-content: center;
+    align-items: center;
+}
+
+.container h2 {
     font-size: 2em;
     font-weight: bold;
     margin-bottom: 1em;
 }
 
-.container p{
+.container p {
     line-height: 1.6em;
 }
 
 .container img {
     width: 300px;
     border-radius: 20px;
+}
+
+@media (max-width: 1000px) {
+    .container section {
+        flex-wrap: wrap;
+    }
 }
