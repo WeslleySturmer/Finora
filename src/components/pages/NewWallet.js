@@ -7,11 +7,33 @@ import Input from '../form/Input'
 
 function NewWallet() {
     const [row, setRow] = useState([])
+    const [wallet, setWallet] = useState({})
+    const [description, setDescription] = useState()
 
     function criaLinha() {
-        setRow(row => (
-            [{ ticker: "", preco_medio: 0, quantidade: 0 }, ...row]
-        ))
+        setRow([...row, { ticker: "", preco_medio: 0, quantidade: 0 }])
+    }
+
+    function handleChangeDesc(e) {
+        setDescription(e.target.value)
+    }
+
+    function handleChangeTab(e, index) {
+        let { name, value } = e.target
+        let updatedRow = [...row]
+        updatedRow[index][name] = value
+        setRow(updatedRow)
+    }
+
+    function handleSave() {
+
+
+        setWallet({
+            ...wallet, wallet: {
+                description: description,
+                assets: row
+            }
+        })
     }
 
     return (
@@ -27,6 +49,7 @@ function NewWallet() {
                         text='Descrição da carteira'
                         name='description'
                         placeholder='Digite o nome da carteira'
+                        handleOnChange={handleChangeDesc}
                     />
 
                     <table>
@@ -39,22 +62,25 @@ function NewWallet() {
                         </thead>
                         <tbody>
                             {row && (
-                                row.map(row => (
+                                row.map((row, index) => (
                                     <tr>
                                         <td><Input
                                             type='text'
                                             name='ticker'
                                             placeholder='Ticker'
+                                            handleOnChange={(e) => handleChangeTab(e, index)}
                                         /></td>
                                         <td><Input
                                             type='number'
                                             name='preco_medio'
                                             placeholder='Preço médio'
+                                            handleOnChange={(e) => handleChangeTab(e, index)}
                                         /></td>
                                         <td><Input
                                             type='number'
                                             name='quantidade'
                                             placeholder='Quantidade'
+                                            handleOnChange={(e) => handleChangeTab(e, index)}
                                         /></td>
                                     </tr>
                                 ))

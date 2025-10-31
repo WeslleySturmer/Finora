@@ -32,7 +32,7 @@ function Wallet(){
                 {wallets.map(wallet => (
                     <WalletCard 
                     description={wallet.description} 
-                    tickers={wallet.tickers}
+                    assets={wallet.assets}
                     />
                 ))}
             </section>
