@@ -9,7 +9,7 @@ import { TbNews } from "react-icons/tb";
 function Home() {
     return (
         <main className={styles.main_container}>
-            <div className={styles.title_and_cards}>
+            <section className={styles.title_and_cards}>
                 <section className={styles.title}>
                     <h1>Simplifique suas finanças</h1>
                     <p>Gerencie, localize gastos e aumente seus aportes com facilidade</p>
@@ -33,7 +33,7 @@ function Home() {
                         <p>Acompanhe as principais notícias do mercado financeiro para não ficar por fora.</p>
                     </article>
                 </section>
-            </div>
+            </section>
 
             <section className={styles.services}>
                 <article>

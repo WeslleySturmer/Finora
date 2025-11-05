@@ -1,0 +1,9 @@
+.form_control{
+    display: flex;
+    flex-direction: column;
+}
+
+.form_control input {
+    width: 200px;
+    margin: 10px 0px;
+}
